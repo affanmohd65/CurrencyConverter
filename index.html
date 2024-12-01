@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Virtual Currency converter</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="currency-converter">
+        <input type = "number" id = "amount" placeholder="Amount"/>
+
+        <div class="currency-select">
+            <select id="fromCurrency">
+
+            </select>
+            <span>to</span>
+            <select id="toCurrency"></select>
+
+        </div>
+
+        <button id="convertBtn">Convert</button>
+
+        <h2 id="result">Result: </h2>
+        <div id="history" class="history">
+    </div>
+    </div>
+    <div class = "mode-toggle">
+        <label for="toggle">Dark Mode</label>
+        <input type="checkbox" id="toggle" onClick="toggleMode()">
+    </div>
+</div>
+
+<script src="app.js"></script>
+    
+</body>
+</html>
